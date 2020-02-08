@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/*---------HEADER CSS -----35***----*/
+#header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./images/dataimage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.user-box {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.user-box img {
+  border-radius: 50%;
+  width: 500px;
+  border: 2px solid #6caed5;
+}
+.user-box h1 {
+  color: #fff;
+  font-weight: bold;
+  margin: 10px;
+}
+.user-box p {
+  color: #fff;
+}
+
+.scroll-btn {
+  bottom: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid #fff;
+  padding: 10px 10px 20px;
+  border-radius: 30px;
+}
+
+.scroll-bar span {
+  border: 2px solid #fff;
+  font-size: 10px;
+  border-radius: 30px;
+}
+.scroll-bar {
+  animation: mover 1s infinite alternate;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+.nav-bar {
+  top: 0;
+  position: sticky;
+  z-index: 2;
+}
+
+.navbar {
+  background-color: #2d4575;
+}
+
+.navbar-brand {
+  /* font-family: "Satisfy", cursive; */
+  color: #fff;
+}
+.nav-bar .fa-bars {
+  font-size: 50px;
+  color: #fff;
+}
+
+.nav-bar .navbar-toggler {
+  outline: none !important;
+}
+.navbar-nav {
+  float: right;
+  text-align: right;
+}
+.nav-link {
+  color: #fff !important;
+  padding-left: 20px;
+}
+
+/*---------------------ABOUT CSS-----------------------*/
+
+.about {
+  padding-top: 100px;
+  scroll-padding-bottom: 50px;
+}
+.profile-img {
+  height: 450px;
+  position: relative;
+  align-content: left;
+  align-items: left;
+  margin: 10px;
+  margin-left: 0;
+  margin-bottom: 60px;
+  max-width: 900px;
+}
+
+.abouttext {
+  /* height: 400px; */
+  position: relative;
+  align-content: right;
+  align-items: right;
+  margin: 20px;
+  margin-bottom: 60px;
+}
+.skills-bar li {
+  font-size: 20px;
+  list-style-type: none;
+}
+
+/*--------------------RESUME----------------*/
+
+.resume {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background: #f9f9f9;
+}
+
+/* .resume h3 {
+    margin-bottom: 50px;
+  } */
+.timeline {
+  position: relative;
+  list-style-type: none;
+}
+.timeline:before {
+  content: "";
+  background: #555;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 1;
+}
+.timeline li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  background: #fff;
+}
+
+.timeline li h4 {
+  background-color: #001f5e;
+  padding: 5px 0 5px 20px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.timeline li:before {
+  content: "";
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #001f5e;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+}
+
+/*----------Projects---------------*/
+
+.projects {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.projects h1 {
+  margin-bottom: 15px;
+}
+
+.projects-box li {
+  list-style-type: none;
+}
+
+.projects-box {
+  background: #f9f9f9;
+  padding: 10px;
+  margin-top: 20px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.projects-box a {
+  color: #777;
+}
+
+.projects-box .fa {
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.projects-box span {
+  margin: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.projects-box p {
+  font-size: 15px;
+  margin-top: 20px;
+  color: #777;
+}
+
+.projects-box:hover {
+  background: #000;
+  color: #fff;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  transition: 1s;
+}
+.projects-box:hover p {
+  color: #fff;
+}
+.projects-box:hover a {
+  color: #fff;
+}
+
+/*---------contact----------------*/
+.contact {
+  padding-top: 50px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(images/dataimage.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.contact a {
+  color: #fff;
+}
+
+.contact .row {
+  padding: 30px 0;
+  font-size: 22px;
+}
+
+.contact .col-md-4 .fa {
+  padding: 10px;
+  font-size: 40px;
+}
+
+.contact .btn {
+  padding: 10px 25px 10px 25px;
+  margin: 5px;
+  border-radius: 30px;
+  border: 2x solid #fff;
+  background: transparent;
+}
